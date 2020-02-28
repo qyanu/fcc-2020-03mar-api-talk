@@ -1,0 +1,6 @@
+FROM swaggerapi/swagger-ui
+
+COPY src/api.json /app/swagger.json
+COPY src/api.json /app/api.json
+
+ENV SWAGGER_JSON=/app/api.json

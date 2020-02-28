@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Time Formatting Service",
+        "version": "0.1.0"
+    },
+    "paths": {
+        "/ping": {
+            "get": {
+                "summary": "ping the service",
+                "responses": {
+                    "default": {
+                        "description": "a pong",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Pong",
+                                    "type": "object",
+                                    "required": ["time"],
+                                    "properties": {
+                                        "time": {
+                                            "type": "date-time",
+                                            "example": "2020-02-28T11:12:34Z"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
