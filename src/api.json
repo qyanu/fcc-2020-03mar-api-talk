@@ -19,7 +19,8 @@
                                     "required": ["time"],
                                     "properties": {
                                         "time": {
-                                            "type": "date-time",
+                                            "type": "string",
+                                            "format": "date-time",
                                             "example": "2020-02-28T11:12:34Z"
                                         }
                                     }
